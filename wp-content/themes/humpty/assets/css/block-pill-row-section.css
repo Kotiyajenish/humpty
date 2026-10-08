@@ -1,0 +1,19 @@
+.pill-row{
+    padding:64px 0 0;
+    background-color: #FBF7F0;
+}
+.pill-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+}
+.event-pill{
+    background:#ffffff;
+    border:1px solid #211C161A;
+    border-radius:100px;
+    padding:11px 22px;
+    font-size:14.5px;
+    font-weight:700;
+    color:#211c16;
+}

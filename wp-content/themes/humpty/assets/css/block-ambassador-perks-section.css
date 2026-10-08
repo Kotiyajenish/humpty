@@ -1,0 +1,49 @@
+.perks-section{
+    background:#ffffff;
+    border-top:1px solid #E4E1DA;
+    border-bottom:1px solid #E4E1DA;
+    padding:90px 0;
+}
+.perks-grid{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.perk-card{
+    flex:1 1 calc(33.333% - 12px);
+    min-width:0;
+    background:#fbf7f0;
+    border:1px solid #E4E1DA;
+    border-radius:20px;
+    padding:30px 26px;
+    text-align:center;
+}
+.perk-icon{
+    width:54px;
+    height:54px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ffffff;
+    margin:0 auto 18px;
+}
+.perk-card:nth-child(1) .perk-icon{
+    background:#e8632c;
+}
+.perk-card:nth-child(2) .perk-icon{
+    background:#6b7a5e;
+}
+.perk-card:nth-child(3) .perk-icon{
+    background:#211c16;
+}
+.perk-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+.perk-card p{
+    font-size:14px;
+    color:var(--ink-soft);
+}
+@media(max-width:860px){.perk-card{flex:1 1 calc(50% - 9px);}}
+@media(max-width:560px){.perk-card{flex:1 1 100%;}}

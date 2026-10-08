@@ -1,0 +1,86 @@
+
+.stats-section {
+    background: #211c16;
+    padding: 28px 0;
+}
+
+.stats-section .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0 40px;
+}
+
+.stat-number {
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 991px) {
+    .stats-section .container {
+        gap: 20px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-content {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-section .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stat-content {
+        padding: 0;
+    }
+
+    .stat-number {
+        font-size: 22px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+}

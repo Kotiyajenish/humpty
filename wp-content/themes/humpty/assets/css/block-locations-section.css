@@ -1,0 +1,127 @@
+
+  .locations-section {
+    padding: 90px 0;
+    background: #fbf7f0;
+}
+
+.locations-section .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.location-card svg {
+    width: 24px !important;
+    height: 24px !important;
+    margin-bottom: 14px !important;
+    color: #F8501F !important;
+    display: block ! important;
+}
+
+.locations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-inter);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #c93e14;
+}
+
+.section-tag .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c93e14;
+}
+
+.locations-heading h2 {
+    margin-top: 14px;
+    font-family: var(--font-fraunces);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.locations-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: #c93e14 !important;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.locations-description {
+    max-width: 680px;
+    margin: -24px 0 36px;
+    font-size: 16px;
+    color: var(--ink-soft);
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.location-card {
+    padding: 26px 24px;
+    background: #ffffff;
+    border: 1px solid #211C161A;
+    border-radius: 16px;
+}
+
+.location-card svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 14px;
+    color: #F8501F;
+}
+
+.location-card h3 {
+    margin: 0 0 6px;
+    font-family: var(--font-fraunces);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.location-card p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+
+@media (max-width: 767px) {
+
+    .locations-section {
+        padding: 70px 0;
+    }
+
+    .locations-section .container {
+        padding: 0 20px;
+    }
+
+    .locations-header {
+        margin-bottom: 32px;
+    }
+
+    .locations-heading h2 {
+        font-size: 30px;
+    }
+
+    .locations-description {
+        margin: 0 0 30px;
+    }
+
+}

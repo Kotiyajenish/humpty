@@ -1,0 +1,81 @@
+.services{
+    padding:90px 0;
+    background-color: #FBF7F0;
+}
+.section-head{
+    text-align:center;
+    max-width:620px;
+    margin:0 auto 56px;
+}
+.section-head h2{
+    font-size:38px;
+    margin:14px 0 12px;
+}
+.section-head p{
+    color:var(--ink-soft);
+    font-size:16.5px;
+}
+.services-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-bottom:40px;
+}
+.service-card{
+    flex:1 1 calc(33.333% - 12px);
+    min-width:0;
+    background:#ffffff;
+    border:1px solid #9c9790;
+    border-radius:20px;
+    padding:30px 26px;
+    position:relative;
+    overflow:hidden;
+}
+.service-icon{
+    width:48px;
+    height:48px;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:21px;
+    color:#ffffff;
+    margin-bottom:18px;
+}
+.style-salsa .service-icon{
+    background:linear-gradient(135deg,#EE8358,#A8431D);
+}
+.style-bachata .service-icon{
+    background:linear-gradient(135deg,#82926F,#3C4634);
+}
+.style-chacha .service-icon{
+    background:linear-gradient(135deg,#F7BA8B,#923B16);
+}
+.style-merengue .service-icon{
+    background:linear-gradient(135deg,#6B6258,#1A1611);
+}
+.style-rueda .service-icon{
+    background:linear-gradient(135deg,#5C9AAA,#163036);
+}
+.style-kizomba .service-icon{
+    background:linear-gradient(135deg,#9C6A9F,#2E1B31);
+}
+.service-card h3{
+    font-size:20px;margin-bottom:10px;
+}
+.service-card p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+}
+@media(max-width:860px){
+    .service-card{
+        flex:1 1 calc(50% - 9px);
+    }
+}
+@media(max-width:560px){
+    .service-card{
+        flex:1 1 100%;
+    }
+}

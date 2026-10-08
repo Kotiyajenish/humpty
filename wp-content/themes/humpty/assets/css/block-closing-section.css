@@ -1,0 +1,14 @@
+.closing{
+    padding:90px 0;
+    text-align:center;
+    background-color: #FBF7F0;
+}
+.closing h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+.closing p{
+    color:#5c5448;
+    font-size:16px;
+    margin-bottom:28px;
+}

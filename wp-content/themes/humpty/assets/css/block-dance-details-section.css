@@ -1,0 +1,202 @@
+.dance-details-section {
+    padding: 90px 0;
+    background: #FBF7F0;
+    margin-top: 90px;
+}
+
+
+.dance-details-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+.dance-detail-row {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 96px;
+    scroll-margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+
+.dance-detail-row:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Reverse social section */
+
+.social-detail {
+    flex-flow: row-reverse wrap;
+}
+
+
+/* Images */
+
+.dance-detail-images {
+    flex: 1 1 320px;
+    min-width: 280px;
+    position: relative;
+    display: flex;
+    gap: 12px;
+}
+
+
+.dance-detail-image {
+    flex: 1 1 320px;
+    min-width: 280px;
+}
+
+
+.dance-detail-images img,
+.dance-detail-image img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+
+.two-images img {
+    flex: 1;
+    height: 180px;
+}
+
+
+.single-image img,
+.dance-detail-image img {
+    height: 360px;
+}
+
+
+
+/* Content */
+
+.dance-detail-content {
+    flex: 1 1 320px;
+    min-width: 280px;
+}
+
+
+.dance-label {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #c93e14;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.dance-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f8501f;
+    display: inline-block;
+}
+
+
+.dance-detail-content h3 {
+    font-family: Fraunces, serif;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    font-size: 30px;
+    margin: 14px 0 16px;
+    line-height: 1.15;
+}
+
+
+.dance-detail-content p {
+    color: #211c16;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+
+.dance-points {
+    list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+}
+
+
+.dance-points li {
+    display: flex;
+    gap: 12px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #F8501F;
+    font-weight: 500;
+}
+
+
+.dance-points svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    stroke: #F8501F;
+    stroke-width: 2.5;
+}
+
+
+.dance-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid #f8501f;
+    color: #f8501f;
+    padding: 13px 26px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-decoration: none;
+}
+.dance-btn:hover{
+    color: #f8501f;
+}
+
+.dance-points li span {
+    color: #211c16;
+}
+
+@media(max-width:768px){
+
+    .dance-details-container{
+        padding:0 20px;
+    }
+
+
+    .dance-detail-row,
+    .social-detail{
+        flex-direction:column;
+        gap:35px;
+    }
+
+
+    .dance-detail-images,
+    .dance-detail-image,
+    .dance-detail-content{
+        width:100%;
+        min-width:100%;
+    }
+
+
+    .two-images img{
+        height:160px;
+    }
+
+
+    .single-image img,
+    .dance-detail-image img{
+        height:300px;
+    }
+
+}

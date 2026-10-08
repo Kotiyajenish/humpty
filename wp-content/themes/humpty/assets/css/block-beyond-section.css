@@ -1,0 +1,119 @@
+.beyond-section{
+    padding:56px 0 0;
+    background: #FBF7F0;
+}
+.beyond-section ul, ol {
+    margin: 0;
+}
+.feature-inner{
+    display:flex;
+    gap:56px;
+    align-items:center;
+    margin-bottom:70px;
+}
+.feature-inner.reverse{
+    flex-direction:row-reverse;
+}
+.feature-copy{
+    flex:1 1 0;
+    min-width:0;
+}
+.feature-copy h2{
+    font-size:30px;
+    margin:14px 0 16px;
+}
+.feature-copy > p{
+    color:var(--ink-soft);
+    font-size:15.5px;
+    margin-bottom:20px;
+}
+.feature-list{
+    list-style:none;
+    margin-bottom:24px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.feature-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    font-size:14px;
+    color:#211c16;
+    font-weight:500;
+    padding:8px 0;
+    border-bottom:1px solid #E4E1DA;
+}
+.feature-list li:first-child{
+    padding-top:0;
+}
+.feature-list li svg{
+    flex-shrink:0;
+    color:#c94e1c;
+    margin-top:2px;
+}
+.feature-visual{
+    flex:1 1 0;
+    min-width:0;
+}
+.feature-visual.split{
+    display:flex;
+    gap:14px;
+}
+.feature-visual.split > div{
+    flex:1 1 0;
+    min-width:0;
+}
+.feature-visual .img-block{
+    border-radius:20px;
+    position:relative;
+    overflow:hidden;
+    flex:1;
+}
+.feature-visual .img-block::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image: radial-gradient(circle at 30% 25%,#FFFFFF29 0%,transparent 50%);
+}
+.feature-visual:not(.split) .img-block{
+    aspect-ratio:4/3.2;
+}
+.feature-visual.split .img-block{
+    aspect-ratio:3/4;
+}
+.img-workshop1 .img-block{
+    background:linear-gradient(135deg,#EE8358 0%,#E8632C 50%,#8C3E16 100%);
+}
+.img-workshop2 .img-block{
+    background:linear-gradient(135deg,#F7BA8B 0%,#E8632C 50%,#923B16 100%);
+}
+.img-social .img-block{
+    background:linear-gradient(135deg,#5C9AAA 0%,#2F6470 50%,#163036 100%);
+}
+.img-choreo1 .img-block{
+    background:linear-gradient(135deg,#9C6A9F 0%,#623A66 50%,#2E1B31 100%);
+}
+.img-choreo2 .img-block{
+    background:linear-gradient(135deg,#82926F 0%,#4E5A43 50%,#2D3525 100%);
+}
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid #211c16;
+    color: #211c16;
+    padding: 13px 26px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14.5px;
+}
+@media(max-width:860px){
+    .feature-inner,.feature-inner.reverse{
+        flex-direction:column;
+    }
+    .feature-visual,.feature-copy{
+        width:100%;margin-bottom:0;
+    }
+}

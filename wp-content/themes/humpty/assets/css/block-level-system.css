@@ -1,0 +1,101 @@
+
+.level-system {
+    background: #f3ebdd;
+    border-radius: 20px;
+    padding: 36px 32px;
+    margin-top: 44px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.level-heading {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #c93e14;
+    margin-bottom: 26px;
+}
+
+.level-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.level-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.level-circle {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid #f8501f;
+    background: #ffffff;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.level-item.active .level-circle {
+    background: #f8501f;
+    color: #ffffff;
+}
+
+.level-small {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.level-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #666666;
+    white-space: nowrap;
+}
+
+.level-arrow {
+    width: 28px;
+    height: 2px;
+    background: #f8501f;
+    margin: 0 4px;
+    position: relative;
+    opacity: .5;
+}
+
+.level-arrow::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -4px;
+    border-left: 7px solid #f8501f;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+@media (max-width:768px){
+
+    .level-list{
+        gap:20px;
+    }
+
+    .level-arrow{
+        display:none;
+    }
+
+}

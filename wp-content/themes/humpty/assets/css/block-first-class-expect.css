@@ -1,0 +1,52 @@
+.first-class {
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 80px 0;
+}
+
+.remember-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.remember-inner>.eyebrow {
+    justify-content: center;
+}
+
+.remember-inner h2 {
+    font-size: 32px;
+    margin: 14px 0 36px;
+}
+
+.remember-list {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.remember-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: #fbf7f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #211c16;
+    font-weight: 500;
+}
+
+.remember-list li svg {
+    flex-shrink: 0;
+    color: #c94e1c;
+    margin-top: 2px;
+}
+
+.remember-list li strong {
+    color: #211c16;
+}

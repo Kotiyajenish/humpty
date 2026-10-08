@@ -1,0 +1,98 @@
+.form-section{
+    background: #ffffff;
+    border-top:1px solid #211C16;
+    padding:90px 0;
+}
+.form-inner{
+    display:flex;
+    gap:56px;
+    align-items:flex-start;
+}
+.form-copy{
+    flex:1 1 0;
+    min-width:0;
+}
+.form-copy h2{
+    font-size:34px;
+    margin:14px 0 14px;
+}
+.form-copy p{
+    color:var(--ink-soft);
+    font-size:16px;
+    max-width:380px;
+}
+.form-box{
+    flex:1.3 1 0;
+    min-width:0;
+    background:#fbf7f0;
+    border:1px solid #211C161A;
+    border-radius:22px;
+    padding:36px;
+}
+.form-row{
+    display:flex;
+    gap:16px;
+    margin-bottom:16px;
+    flex-wrap:wrap;
+}
+.form-field{
+    flex:1 1 200px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.form-field.full{
+    flex:1 1 100%;
+}
+.form-field label{
+    font-size:12.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#5c5448;
+}
+.form-field input,.form-field textarea{
+    border:1px solid #a19e9e;
+    background:#ffffff;
+    border-radius:10px;
+    padding:12px 14px;
+    font-size:14.5px;
+    font-family:'Inter',sans-serif;
+    color:#211c16;
+    resize:vertical;
+}
+.form-field input:focus,.form-field textarea:focus{
+    outline:2px solid #a19e9e;
+    outline-offset:1px;
+}
+input.wpcf7-form-control.wpcf7-submit.has-spinner.btn-primary.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8632c;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    transition: background .15s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+.contact-form {
+    display: flex !important;
+    gap: 20px;
+}
+.form-row .form-field p {
+    margin: 0;
+}
+@media(max-width:860px){
+    .form-inner{
+        flex-direction:column;
+    }
+    .form-copy p{
+        max-width:none;
+    }
+}

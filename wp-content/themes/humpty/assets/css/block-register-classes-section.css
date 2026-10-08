@@ -1,0 +1,46 @@
+ .register-classes-section {
+    padding: 90px 0;
+    background: #ffffff;
+    border-top: 1px solid #E4E1DA;
+}
+
+.register-classes-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.register-classes-note {
+    max-width: 620px;
+    margin: 0 auto 36px;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #5c5448;
+    background: #fbf7f0;
+    border: 1.5px dashed var(--line);
+    border-radius: 12px;
+}
+
+.register-classes-box {
+    padding: 70px 30px;
+    text-align: center;
+    background: #fbf7f0;
+    border: 2px dashed var(--line);
+    border-radius: 20px;
+    color: #5c5448;
+    font-weight: 600;
+}
+
+.register-classes-title {
+    margin: 0 0 8px;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    color: var(--ink);
+}
+
+.register-classes-description {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+}
